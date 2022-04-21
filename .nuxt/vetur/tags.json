@@ -1,0 +1,26 @@
+{
+  "CreatedPost": {
+    "description": "Auto imported from components/CreatedPost.vue"
+  },
+  "MainHeader": {
+    "description": "Auto imported from components/MainHeader.vue"
+  },
+  "Posts": {
+    "description": "Auto imported from components/Posts.vue"
+  },
+  "RegisterHeader": {
+    "description": "Auto imported from components/RegisterHeader.vue"
+  },
+  "SinglePost": {
+    "description": "Auto imported from components/SinglePost.vue"
+  },
+  "UserHome": {
+    "description": "Auto imported from components/UserHome.vue"
+  },
+  "UserLogin": {
+    "description": "Auto imported from components/UserLogin.vue"
+  },
+  "UserRegister": {
+    "description": "Auto imported from components/UserRegister.vue"
+  }
+}
