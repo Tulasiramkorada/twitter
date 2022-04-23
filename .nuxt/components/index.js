@@ -1,7 +1,7 @@
 export { default as CreatedPost } from '../..\\components\\CreatedPost.vue'
 export { default as MainHeader } from '../..\\components\\MainHeader.vue'
 export { default as Posts } from '../..\\components\\Posts.vue'
-export { default as RegisterHeader } from '../..\\components\\RegisterHeader.vue'
+export { default as SignIn } from '../..\\components\\sign_in.vue'
 export { default as SinglePost } from '../..\\components\\SinglePost.vue'
 export { default as UserHome } from '../..\\components\\UserHome.vue'
 export { default as UserLogin } from '../..\\components\\UserLogin.vue'

@@ -4,7 +4,7 @@ const state = () => ({
     name: null,
     email: null,
     post: [],
-    comment: [],
+    comments: [],
     userid: null,
     errMsg: null,
     postId: null,
@@ -20,8 +20,9 @@ const mutations = {
       state.token = data.token
       state.userid = data.user_id
       state.email = data.email
-      state.name = data.name
+      state.name = data.full_name
     },
+    
     setList(state, data) {
       state.posts = data
     },
@@ -93,7 +94,7 @@ const actions = {
       commit('setComments', res.data)
   },
   async updateName({ state }, data) {
-    const res =await this.$axios.put('user',{name: data});
+    const res =await this.$axios.put('user',{full_name: data});
   },
   async createComment({commit,state}, data){
     const res = await this.$axios.post('comment/'+state.postId, {commentText: data});
@@ -102,7 +103,7 @@ const actions = {
     const res = await this.$axios.delete('comment/'+data);
   },
   async updatePost({state}, data){
-    const res = await this.$axios.put('post/'+state.post.id, {title: data});
+    const res = await this.$axios.put('post/'+state.postId, {title: data});
   },
   async deletePost({state},data){
     const res = await this.$axios.delete('post/'+data);

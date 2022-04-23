@@ -8,16 +8,18 @@
           <h4><b>UserProfile :</b></h4>
           <hr />
           <label>
-            Name:
+            Your Name:<br />
             <input type="text" v-model="editname" v-if="isUpdating" />
             <span v-else>{{ name }}</span>
+            <br />
             <button
-              class="btn btn-button bg-info"
+              class="btn btn-outline-secondary"
               v-if="!isUpdating"
               @click="isUpdate"
             >
               Update
             </button>
+            <br />
             <button
               class="btn btn-outline-secondary"
               v-if="isUpdating"

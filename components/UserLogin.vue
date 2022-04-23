@@ -11,6 +11,7 @@
               <label for="exampleInputEmail1" class="form-label"
                 >E-mail Id</label
               >
+
               <input
                 type="email"
                 class="form-control"
@@ -70,7 +71,7 @@ export default {
 </script>
 
 <style>
-input {
+.form-control {
   width: 75%;
 }
 </style>

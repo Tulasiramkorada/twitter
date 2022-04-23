@@ -5,14 +5,14 @@
       <div class="class col-md-4">
         <div class="mt-5">
           <label for="exampleInputEmail1" class="form-label"
-            ><b>Create Post </b> :</label
-          >
+            ><b>Create Post:- </b> :</label
+          ><br />
           <input
             type="text"
             v-model="post"
-            placeholder="Enter Title"
+            placeholder="Enter your post"
             required
-          />
+          /><br /><br />
           <button @click="addPost(post)" class="btn btn-outline-success">
             Submit
           </button>

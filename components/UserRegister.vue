@@ -5,7 +5,9 @@
       <div class="class col-md-4 mt-5">
         <form @submit.prevent="registerForm">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <label for="exampleInputEmail1" class="form-label"
+              >Enter Your Name:-</label
+            >
             <input
               type="text"
               class="form-control"
@@ -17,7 +19,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <label for="exampleInputEmail1" class="form-label"
+              >Enter Your E-mail:-</label
+            >
             <input
               type="email"
               class="form-control"
@@ -30,7 +34,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
-              >Password</label
+              >Create Your Password:-</label
             >
             <input
               type="password"

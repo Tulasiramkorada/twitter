@@ -8,8 +8,8 @@
   "Posts": {
     "description": "Auto imported from components/Posts.vue"
   },
-  "RegisterHeader": {
-    "description": "Auto imported from components/RegisterHeader.vue"
+  "SignIn": {
+    "description": "Auto imported from components/sign_in.vue"
   },
   "SinglePost": {
     "description": "Auto imported from components/SinglePost.vue"

@@ -12,6 +12,12 @@
             v-model="postText"
             v-if="isUpdating"
           />
+          <!-- <input
+            class="form-control"
+            type="text"
+            v-value="postText"
+            v-if="isUpdating"
+          /> -->
           <h2 v-else>PostTitle : {{ post.title }}</h2>
           <br />
           <div v-if="post.userId == userid">
@@ -25,7 +31,7 @@
             <button
               class="btn btn-outline-secondary"
               v-if="!isUpdating"
-              @click="deletePost(post.id)"
+              @click="deletePost(post.postId)"
             >
               Delete
             </button>
@@ -43,7 +49,8 @@
             <div v-for="(comment, i) in comments" :key="i">
               <div>
                 <span>{{ comment.commentText }}</span
-                ><button
+                ><br /><button
+                  class="btn btn-outline-secondary"
                   v-if="comment.userId == userid"
                   @click="deleteComment(comment.id)"
                 >
@@ -52,8 +59,8 @@
               </div>
             </div>
             <div>
-              <label>Comments Here:</label>
-              <input type="text" v-model="commentText" />
+              <label>Comments Here:</label><br />
+              <input type="text" v-model="commentText" /><br /><br />
               <button class="btn btn-outline-secondary" @click="createComment">
                 Submit
               </button>
@@ -90,9 +97,9 @@ export default {
     this.$store.dispatch('getComments')
   },
   methods: {
-    async createComment(id) {
+    async createComment() {
       await this.$store.dispatch('createComment', this.commentText)
-      await this.$store.dispatch('getComments')
+      this.$store.dispatch('getComments')
       this.commentText = ''
     },
     async deleteComment(id) {

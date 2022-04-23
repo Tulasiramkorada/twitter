@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg" style="background-color: black">
+    <nav class="navbar navbar-expand-md" style="background-color: black">
       <div class="container-fluid">
         <nuxt-link class="text-white bg-dark" to="/">twitter</nuxt-link>
 

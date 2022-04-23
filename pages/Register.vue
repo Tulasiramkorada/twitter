@@ -1,6 +1,6 @@
 <template>
   <div>
-    <RegisterHeader />
+    <sign-in />
     <UserRegister />
   </div>
 </template>

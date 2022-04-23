@@ -9,7 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<CreatedPost>` | `<created-post>` (components/CreatedPost.vue)
 - `<MainHeader>` | `<main-header>` (components/MainHeader.vue)
 - `<Posts>` | `<posts>` (components/Posts.vue)
-- `<RegisterHeader>` | `<register-header>` (components/RegisterHeader.vue)
+- `<SignIn>` | `<sign-in>` (components/sign_in.vue)
 - `<SinglePost>` | `<single-post>` (components/SinglePost.vue)
 - `<UserHome>` | `<user-home>` (components/UserHome.vue)
 - `<UserLogin>` | `<user-login>` (components/UserLogin.vue)
